@@ -4,7 +4,7 @@ A simple and intuitive logo maker tool built as part of the **Froncort AI Intern
 
 ## 🚀 Live Demo
 
-[View Live Application](#) <!-- Add your deployed link here -->
+[View Live Application](https://froncort-ai-assignment.vercel.app/)
 
 ## 🛠️ Tech Stack
 
