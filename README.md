@@ -1,4 +1,4 @@
-# Logo Maker
+# Logo AI
 
 A simple and intuitive logo maker tool built as part of the **Froncort AI Internship Assignment**. This application allows users to create custom logos with AI-powered assistance and modern design tools.
 
