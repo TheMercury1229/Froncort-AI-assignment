@@ -7,7 +7,6 @@ const initialState = {
   bookmarks: [],
   loading: false,
   error: null,
-  generationHistory: [],
 };
 
 // Generate logo using Gemini
@@ -169,14 +168,6 @@ const logoOpsSlice = createSlice({
     clearError: (state) => {
       state.error = null;
     },
-
-    addToHistory: (state, action) => {
-      state.generationHistory.unshift(action.payload);
-      // Keep only last 10 generations
-      if (state.generationHistory.length > 10) {
-        state.generationHistory = state.generationHistory.slice(0, 10);
-      }
-    },
   },
 
   extraReducers: (builder) => {
@@ -184,15 +175,6 @@ const logoOpsSlice = createSlice({
       .addCase(generateSVG.pending, (state) => {
         state.loading = true;
         state.error = null;
-      })
-      .addCase(generateSVG.fulfilled, (state, action) => {
-        state.loading = false;
-        state.generatedSVG = action.payload.svg;
-        state.generationHistory.unshift(action.payload);
-        // Keep only last 10 generations
-        if (state.generationHistory.length > 10) {
-          state.generationHistory = state.generationHistory.slice(0, 10);
-        }
       })
       .addCase(generateSVG.rejected, (state, action) => {
         state.loading = false;
