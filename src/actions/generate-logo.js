@@ -65,7 +65,6 @@ Return ONLY the SVG code - no explanations or formatting.`;
     const result = await model.generateContent(SYSTEM_PROMPT);
     const response = await result.response;
     let svg = response.text().trim();
-    console.log("Generated SVG response:", svg);
 
     // Enhanced SVG extraction to handle multiple code block formats
     svg = svg
@@ -102,7 +101,6 @@ Return ONLY the SVG code - no explanations or formatting.`;
     // Clean up any extra whitespace and ensure proper formatting
     svg = svg.replace(/\s+/g, " ").trim();
 
-    console.log("Final cleaned SVG:", svg);
     return svg;
   } catch (error) {
     console.error("Error generating logo:", error);
