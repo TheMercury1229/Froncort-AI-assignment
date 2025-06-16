@@ -121,6 +121,6 @@ This project was created as part of an internship assignment. Feel free to fork 
 
 ---
 
-Built with ❤️ using Next.js 15, Redux, and ShadcnUI
+Built with ❤️ using Next.js 15, Redux, and ShadcnUI \n
 Powered by Mercury
 
