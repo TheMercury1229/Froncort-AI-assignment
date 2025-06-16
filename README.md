@@ -48,8 +48,8 @@ I followed these excellent YouTube tutorials to master Redux and RTK:
 
 1. **Clone the repository**
    ```bash
-   git clone [your-repo-url]
-   cd logo-maker
+   git clone https://github.com/TheMercury1229/Froncort-AI-assignment.git
+   cd Froncort-AI-assignment
    ```
 
 2. **Install dependencies**
@@ -61,7 +61,7 @@ I followed these excellent YouTube tutorials to master Redux and RTK:
 
 3. **Environment Setup**
    
-   Create a `.env.local` file in the root directory and add your Gemini API key:
+   Create a `.env` file in the root directory and add your Gemini API key:
    ```env
    GEMINI_API_KEY=your_gemini_api_key_here
    ```
@@ -69,7 +69,7 @@ I followed these excellent YouTube tutorials to master Redux and RTK:
    To get your Gemini API key:
    - Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
    - Create a new API key
-   - Copy and paste it into your `.env.local` file
+   - Copy and paste it into your `.env` file
 
 4. **Run the development server**
    ```bash
@@ -122,3 +122,5 @@ This project was created as part of an internship assignment. Feel free to fork 
 ---
 
 Built with ❤️ using Next.js 15, Redux, and ShadcnUI
+Powered by Mercury
+
